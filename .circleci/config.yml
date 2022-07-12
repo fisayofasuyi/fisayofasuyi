@@ -6,8 +6,8 @@ jobs:
     docker:
       - image: cimg/base:2021.04
         auth:
-          username: USERNAME
-          password: PASSWORD  # context / project UI env-var reference
+          username: fredmann1993 
+          password: Fi$ayo1993$  # context / project UI env-var reference
     steps:
       - checkout
       - run: echo "this is the build job"
@@ -15,8 +15,8 @@ jobs:
     docker:
       - image: cimg/base:2021.04
         auth:
-          username: USERNAME 
-          password: PASSWORD  # context / project UI env-var reference
+          username: fredmann1993   
+          password: Fi$ayo1993$  # context / project UI env-var reference
     steps:
       - checkout
       - run: echo "this is the test job"
