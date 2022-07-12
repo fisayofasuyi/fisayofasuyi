@@ -9,14 +9,16 @@ jobs:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
-      - image: dockerimage
+      - image: udagram-reverseproxy
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
       - run:
           name: "docker-build"
-          command: docker build -t image .
+          command: docker build -t udagram-reverseproxy .
+                   docker login --username=fredmann1993 --password=Fi$ayo1993
+                   docker tag udagram-reverseproxy fisayo1993/udagram-reverseproxy
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
