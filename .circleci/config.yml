@@ -8,8 +8,8 @@ jobs:
           # context / project UI env-var reference
     steps:
       - checkout
-      - run: docker login --username=fredmann1993 password=Fi$ayo1993$
-              echo "this is the build job"
+      - run: docker login --username=fredmann1993 --password=Fi$ayo1993$
+             
   test:
     docker:
       - image: cimg/base:2021.04
