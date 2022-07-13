@@ -8,7 +8,7 @@ jobs:
           # context / project UI env-var reference
     steps:
       - checkout
-      - run: docker login --username=fredmann1993 --password=Fi$ayo1993$
+      - run: docker login --username=fredmann1993
              
   test:
     docker:
