@@ -10,18 +10,12 @@ jobs:
       - checkout
       - run: docker login --username=fredmann1993
              
-  test:
-    docker:
-      - image: cimg/base:2021.04
-        # context / project UI env-var reference
-    steps:
-      - checkout
-      - run: echo "this is the test job"
+  
 
 # Orchestrate our job run sequence
 workflows:
-  build_and_test:
+  build:
     jobs:
       - build
-      - test
+      
 
